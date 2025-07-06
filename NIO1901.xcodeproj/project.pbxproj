@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -652,9 +652,8 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		561633B52261950C00D24F87 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolder = Frameworks;
 			files = (
 				565DD997238CF5FE004013B0 /* NIOFoundationCompat.framework in Embed Frameworks */,
 				56F415BE227711A000AE1554 /* TunnelServices.framework in Embed Frameworks */,
@@ -675,24 +674,20 @@
 				565DD995238CF5DC004013B0 /* NIOConcurrencyHelpers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		563AA3FD2245EF83001766FA /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolder = PlugIns;
 			files = (
 				56162E63224F558D00D24F87 /* PacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56496588238BD8250089BC4D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolder = Frameworks;
 			files = (
 				565CBE21238BEEF600CF0A3A /* NIOSSL.framework in Embed Frameworks */,
 				56496587238BD8250089BC4D /* NIO.framework in Embed Frameworks */,
@@ -701,18 +696,15 @@
 				565CBDA4238BECF100CF0A3A /* CNIOBoringSSL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		565CBE24238BEF1000CF0A3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolder = Frameworks;
 			files = (
 				565CBE23238BEF1000CF0A3A /* NIOSSL.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -1192,14 +1184,11 @@
 /* Begin PBXFrameworksBuildPhase section */
 		150C855121F6A04400318C60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		153E207121EC26B500B82536 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				565DD98F238CDAF4004013B0 /* NIOSSL.framework in Frameworks */,
 				565DD986238CDAF3004013B0 /* CNIOLinux.framework in Frameworks */,
@@ -1223,11 +1212,9 @@
 				565DD980238CDAF3004013B0 /* CNIOAtomics.framework in Frameworks */,
 				565DD984238CDAF3004013B0 /* CNIOHTTPParser.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56162E58224F558D00D24F87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				565CBE22238BEF1000CF0A3A /* NIOSSL.framework in Frameworks */,
 				564B308E22B2215D00387E07 /* AxLogger.framework in Frameworks */,
@@ -1235,11 +1222,9 @@
 				56162E8B2255CCB100D24F87 /* NetworkExtension.framework in Frameworks */,
 				76BD4069B5DEA69FE4F9F580 /* Pods_PacketTunnel.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56F415B32277119F00AE1554 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				563D169C22B5F1D900AC6F5C /* MMWormhole.framework in Frameworks */,
 				564B308F22B2216200387E07 /* AxLogger.framework in Frameworks */,
@@ -1250,7 +1235,6 @@
 				565CB8F7238BEB8400CF0A3A /* NIOFoundationCompat.framework in Frameworks */,
 				56496586238BD8250089BC4D /* NIO.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -2482,11 +2466,9 @@
 /* Begin PBXHeadersBuildPhase section */
 		56F415B12277119F00AE1554 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				56F415BA227711A000AE1554 /* TunnelServices.h in Headers */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
@@ -2546,8 +2528,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = PacketTunnel;
 			productName = PacketTunnel;
 			productReference = 56162E5B224F558D00D24F87 /* PacketTunnel.appex */;
@@ -2565,8 +2545,6 @@
 				56496588238BD8250089BC4D /* Embed Frameworks */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = TunnelServices;
 			productName = TunnelServices;
@@ -2626,7 +2604,6 @@
 				};
 			};
 			buildConfigurationList = 153E206F21EC26B500B82536 /* Build configuration list for PBXProject "NIO1901" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2635,6 +2612,7 @@
 				"zh-Hans",
 			);
 			mainGroup = 153E206B21EC26B500B82536;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 153E207521EC26B500B82536 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -2845,14 +2823,11 @@
 /* Begin PBXResourcesBuildPhase section */
 		150C855221F6A04400318C60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		153E207221EC26B500B82536 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				5675D14922AF855100562E73 /* icn_icn_fail2.png in Resources */,
 				5675D14F22AF855100562E73 /* icon_sign2@2x.png in Resources */,
@@ -2876,30 +2851,22 @@
 				56F4157A22756F6200AE1554 /* TaskCell.xib in Resources */,
 				153E207D21EC26B500B82536 /* Main.storyboard in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56162E59224F558D00D24F87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56F415B42277119F00AE1554 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		940E7301A88BA00B730B9189 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
@@ -2908,37 +2875,40 @@
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PacketTunnel-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = (
+				"diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null",
+				"if [ $? != 0 ] ; then",
+				"    # print error to STDERR",
+				"    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2",
+				"    exit 1",
+				"fi",
+				"# This output is used by Xcode 'outputs' to avoid re-running this script phase.",
+				"echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 		A822BD68E24651883975D417 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NIO1901/Pods-NIO1901-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NIO1901/Pods-NIO1901-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIO1901/Pods-NIO1901-frameworks.sh\"\n";
+			shellScript = (
+				"\"${PODS_ROOT}/Target Support Files/Pods-NIO1901/Pods-NIO1901-frameworks.sh\"",
+				"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 		B0C8B630042532A4968F514E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
@@ -2947,16 +2917,23 @@
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NIO1901-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = (
+				"diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null",
+				"if [ $? != 0 ] ; then",
+				"    # print error to STDERR",
+				"    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2",
+				"    exit 1",
+				"fi",
+				"# This output is used by Xcode 'outputs' to avoid re-running this script phase.",
+				"echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 		EE26BD97DF3324647656C30C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
@@ -2965,9 +2942,19 @@
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TunnelServices-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = (
+				"diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null",
+				"if [ $? != 0 ] ; then",
+				"    # print error to STDERR",
+				"    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2",
+				"    exit 1",
+				"fi",
+				"# This output is used by Xcode 'outputs' to avoid re-running this script phase.",
+				"echo \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"",
+				"",
+				"",
+			);
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2975,7 +2962,6 @@
 /* Begin PBXSourcesBuildPhase section */
 		150C855021F6A04400318C60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				150C864021F6A05900318C60 /* SocketOptionProviderTest.swift in Sources */,
 				150C862621F6A05900318C60 /* MulticastTest+XCTest.swift in Sources */,
@@ -3129,11 +3115,9 @@
 				150C85E021F6A05800318C60 /* HTTPHeadersTest+XCTest.swift in Sources */,
 				150C85F321F6A05800318C60 /* HTTPServerProtocolErrorHandlerTest+XCTest.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		153E207021EC26B500B82536 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				561BE7D3229BD32E003235D4 /* JXSegmentedIndicatorParamsModel.swift in Sources */,
 				56A137BF2270794700DEE539 /* ConstraintPriority.swift in Sources */,
@@ -3328,19 +3312,15 @@
 				56F07D4F22A6AB4E0061407C /* ZKProgressHUDType.swift in Sources */,
 				561BE7C9229BD32E003235D4 /* JXSegmentedView.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56162E57224F558D00D24F87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				56162E5E224F558D00D24F87 /* PacketTunnelProvider.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		56F415B22277119F00AE1554 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				565A4F5B2277436C00F13CAD /* Session.swift in Sources */,
 				00A9660827913F9B002B9FDA /* ASUtils.swift in Sources */,
@@ -3395,7 +3375,6 @@
 				56F415D72277122D00AE1554 /* TunnelProxyHandler.swift in Sources */,
 				5675D16722AFE36900562E73 /* Date+Extension.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -3456,13 +3435,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		150C855C21F6A04400318C60 /* Debug */ = {
+		150C855C21F6A04400318C60 /* Debug configuration for PBXNativeTarget "NIO1901Tests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3EH88P4K6;
 				INFOPLIST_FILE = NIO1901Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3476,13 +3456,14 @@
 			};
 			name = Debug;
 		};
-		150C855D21F6A04400318C60 /* Release */ = {
+		150C855D21F6A04400318C60 /* Release configuration for PBXNativeTarget "NIO1901Tests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3EH88P4K6;
 				INFOPLIST_FILE = NIO1901Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3496,7 +3477,7 @@
 			};
 			name = Release;
 		};
-		153E208421EC26C800B82536 /* Debug */ = {
+		153E208421EC26C800B82536 /* Debug configuration for PBXProject "NIO1901" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3558,7 +3539,7 @@
 			};
 			name = Debug;
 		};
-		153E208521EC26C800B82536 /* Release */ = {
+		153E208521EC26C800B82536 /* Release configuration for PBXProject "NIO1901" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -3614,7 +3595,7 @@
 			};
 			name = Release;
 		};
-		153E208721EC26C800B82536 /* Debug */ = {
+		153E208721EC26C800B82536 /* Debug configuration for PBXNativeTarget "NIO1901" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCC24BC318DA421F593C7177 /* Pods-NIO1901.debug.xcconfig */;
 			buildSettings = {
@@ -3631,7 +3612,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = NIO1901/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3647,7 +3628,7 @@
 			};
 			name = Debug;
 		};
-		153E208821EC26C800B82536 /* Release */ = {
+		153E208821EC26C800B82536 /* Release configuration for PBXNativeTarget "NIO1901" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFE65698155AEF215FFC3F86 /* Pods-NIO1901.release.xcconfig */;
 			buildSettings = {
@@ -3664,7 +3645,7 @@
 				);
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = NIO1901/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3679,7 +3660,7 @@
 			};
 			name = Release;
 		};
-		56162E65224F558D00D24F87 /* Debug */ = {
+		56162E65224F558D00D24F87 /* Debug configuration for PBXNativeTarget "PacketTunnel" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99BAB04DC95D77B60FFFF77E /* Pods-PacketTunnel.debug.xcconfig */;
 			buildSettings = {
@@ -3689,7 +3670,7 @@
 				DEVELOPMENT_TEAM = J3EH88P4K6;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3704,7 +3685,7 @@
 			};
 			name = Debug;
 		};
-		56162E66224F558D00D24F87 /* Release */ = {
+		56162E66224F558D00D24F87 /* Release configuration for PBXNativeTarget "PacketTunnel" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E59E2F5FD1342D168E70FB66 /* Pods-PacketTunnel.release.xcconfig */;
 			buildSettings = {
@@ -3714,7 +3695,7 @@
 				DEVELOPMENT_TEAM = J3EH88P4K6;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3729,7 +3710,7 @@
 			};
 			name = Release;
 		};
-		56F415C0227711A000AE1554 /* Debug */ = {
+		56F415C0227711A000AE1554 /* Debug configuration for PBXNativeTarget "TunnelServices" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA4F9D1F9BD7E1C68E596AC /* Pods-TunnelServices.debug.xcconfig */;
 			buildSettings = {
@@ -3745,7 +3726,7 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = TunnelServices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3763,7 +3744,7 @@
 			};
 			name = Debug;
 		};
-		56F415C1227711A000AE1554 /* Release */ = {
+		56F415C1227711A000AE1554 /* Release configuration for PBXNativeTarget "TunnelServices" */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 460FB976DF65AC5945AAF052 /* Pods-TunnelServices.release.xcconfig */;
 			buildSettings = {
@@ -3779,7 +3760,7 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = TunnelServices/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3802,46 +3783,41 @@
 		150C855B21F6A04400318C60 /* Build configuration list for PBXNativeTarget "NIO1901Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				150C855C21F6A04400318C60 /* Debug */,
-				150C855D21F6A04400318C60 /* Release */,
+				150C855C21F6A04400318C60 /* Debug configuration for PBXNativeTarget "NIO1901Tests" */,
+				150C855D21F6A04400318C60 /* Release configuration for PBXNativeTarget "NIO1901Tests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		153E206F21EC26B500B82536 /* Build configuration list for PBXProject "NIO1901" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				153E208421EC26C800B82536 /* Debug */,
-				153E208521EC26C800B82536 /* Release */,
+				153E208421EC26C800B82536 /* Debug configuration for PBXProject "NIO1901" */,
+				153E208521EC26C800B82536 /* Release configuration for PBXProject "NIO1901" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		153E208621EC26C800B82536 /* Build configuration list for PBXNativeTarget "NIO1901" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				153E208721EC26C800B82536 /* Debug */,
-				153E208821EC26C800B82536 /* Release */,
+				153E208721EC26C800B82536 /* Debug configuration for PBXNativeTarget "NIO1901" */,
+				153E208821EC26C800B82536 /* Release configuration for PBXNativeTarget "NIO1901" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		56162E64224F558D00D24F87 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56162E65224F558D00D24F87 /* Debug */,
-				56162E66224F558D00D24F87 /* Release */,
+				56162E65224F558D00D24F87 /* Debug configuration for PBXNativeTarget "PacketTunnel" */,
+				56162E66224F558D00D24F87 /* Release configuration for PBXNativeTarget "PacketTunnel" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		56F415BF227711A000AE1554 /* Build configuration list for PBXNativeTarget "TunnelServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56F415C0227711A000AE1554 /* Debug */,
-				56F415C1227711A000AE1554 /* Release */,
+				56F415C0227711A000AE1554 /* Debug configuration for PBXNativeTarget "TunnelServices" */,
+				56F415C1227711A000AE1554 /* Release configuration for PBXNativeTarget "TunnelServices" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
